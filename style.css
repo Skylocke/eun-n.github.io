@@ -1,0 +1,11 @@
+a-curvedimage {
+	border: 4px solid black;
+}
+
+body {
+	color: white;
+}
+
+#test {
+	visibility: hidden;
+}
