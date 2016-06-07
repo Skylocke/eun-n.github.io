@@ -15,7 +15,7 @@
         <script src="/script.js"></script>
 
   </head>
-  <body>
+  <body onload="pause1()">
     <a-scene>
 
     <!-- list of assets used in the app -->
@@ -23,6 +23,8 @@
       <img id="ui2" src="assets/taei.png">
       <img id="ui3" src="assets/taeyeonrain.jpg">
       <img id="ui4" src="assets/menu.png">
+      <img id="ui5" src="assets/play.png">
+      <img id="ui6" src="assets/pause.png">
 
       <video id="coaster" autoplay loop="true" src="assets/teaser.mp4">
     </a-assets>
@@ -51,13 +53,15 @@
           
     <!-- image when 'clicked' on will change the source video -->
     <!-- <div ng-show="menutest" >Test</div> -->
-      <a-image id="test" onclick="eye()" src="#ui2" rotation="0 0 0" height="1" width="1" position="1 -.7 0" visible="false">                
+      <a-image id="test" onclick="eye()" src="#ui2" rotation="0 0 0" height="1" width="1" position="4 2.2 0" visible="false">                
       </a-image>
-      <a-image id="test1" onclick="rain()" src="#ui3" rotation="0 0 0" height="1" width="1" position="2.5 -.7 0" visible="false">                
+      <a-image id="test1" onclick="rain()" src="#ui3" rotation="0 0 0" height="1" width="1" position="4 .8 0" visible="false">                
       </a-image>
 
       <!-- Image icon for a menu button -->
-      <a-image id="menuhide" onclick="toggle()" src="#ui4" rotation="0 0 0" height=".5" width=".5" position="0 -.5 0"></a-image>
+      <a-image id="menu" onclick="toggle()" src="#ui4" rotation="0 0 0" height=".5" width=".5" position="4 3.2 0"></a-image>
+      <a-image id="play" onclick="play1()" src="#ui5" rotation="0 0 0" height=".5" width=".5" position="0 -.5 0" visible="false"></a-image>
+      <a-image id="pause" onclick="pause1()" src="#ui6" rotation="0 0 0" height=".5" width=".5" position="0 -.5 0" visible="true"></a-image>
 
       <a-sky color="black"></a-sky>
 
