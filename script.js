@@ -1,5 +1,5 @@
 var arr = ['assets/taeyeon1.mp4', 'assets/taeyeon.mp4', 'assets/FantasticBaby.mp4', 'assets/ptdemo1.mp4', 'assets/ptdemo2.mp4', 'assets/ptdemo3.mp4'];
-var aa = 0;
+var aa = 3;
 
 function vid (a) {
 	document.querySelector("#coaster").src = arr[a];	
