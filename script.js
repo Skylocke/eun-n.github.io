@@ -54,12 +54,14 @@ function pause1() {
 
 function sound() {
 	document.getElementById('coaster').muted = true;
+	document.getElementById('coaster').volume=0;
 	document.getElementById('mute').setAttribute('visible', true);
 	document.getElementById('sound').setAttribute('visible', false);
 }
 
 function mute() {
 	document.getElementById('coaster').muted = false;
+	document.getElementById('coaster').volume = 1;
 	document.getElementById('mute').setAttribute('visible', false);
 	document.getElementById('sound').setAttribute('visible', true);
 }
