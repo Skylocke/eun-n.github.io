@@ -63,3 +63,8 @@ function forward() {
 		aa = 0;
 		}
 }
+
+function start () {
+	vid(3);
+	pause1();
+}
