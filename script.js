@@ -66,6 +66,8 @@ function forward() {
 		document.getElementById('coaster').src= arr[0]; 
 		aa = 0;
 		}
+
+		play1();
 }
 
 function start () {
