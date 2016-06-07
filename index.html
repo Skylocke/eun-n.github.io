@@ -32,7 +32,7 @@
       <img id="ui9" src="assets/rewind.png">
       <img id="ui10" src="assets/forward.png">
       <img id="ui11" src="assets/baby.jpg">
-      <img id="ui12" src="assets/sober.jpg">
+      <img id="ui12" src="assets/pt.jpg">
 
       <!-- video tag, able to manipulate video src, but not a-video src -->
       <video id="coaster" autoplay loop="true"  controls>
@@ -59,10 +59,10 @@
   <a-video id="currentvid" src="#coaster" width="48" height="27" position="0 0 -25" webkit-playsinline></a-video>     
           
     <!-- image when 'clicked' on will change the source video -->
-    <a-image id="test" onclick="eye()" src="#ui2" rotation="0 0 0" height="1" width="1" position="4 2.4 0" visible="false"></a-image>
-    <a-image id="test1" onclick="rain()" src="#ui3" rotation="0 0 0" height="1" width="1" position="4 1.2 0" visible="false"></a-image>
-    <a-image id="baby" onclick="fantastic()" src="#ui11" rotation="0 0 0" height="1" width="1" position="4 0 0" visible="false"></a-image>
-    <a-image id="sober" onclick="sober()" src="#ui12" rotation="0 0 0" height="1" width="1" position="4 -1.2 0" visible="false"></a-image>
+    <a-image id="test" onclick="vid(0)" src="#ui2" rotation="0 0 0" height="1" width="1" position="4 2.4 0" visible="false"></a-image>
+    <a-image id="test1" onclick="vid(1)" src="#ui3" rotation="0 0 0" height="1" width="1" position="4 1.2 0" visible="false"></a-image>
+    <a-image id="baby" onclick="vid(2)" src="#ui11" rotation="0 0 0" height="1" width="1" position="4 0 0" visible="false"></a-image>
+    <a-image id="pt" onclick="vid(3)" src="#ui12" rotation="0 0 0" height="1" width="1" position="4 -1.2 0" visible="false"></a-image>
 
    <!-- Image icon for a menu button -->
    <a-image id="menu" onclick="toggle()" src="#ui4" rotation="0 0 0" height=".5" width=".5" position="4 3.2 0"></a-image>

@@ -1,43 +1,19 @@
-var arr = ['assets/taeyeon1.mp4', 'assets/taeyeon.mp4', 'assets/FantasticBaby.mp4', 'assets/Sober.mp4'];
+var arr = ['assets/taeyeon1.mp4', 'assets/taeyeon.mp4', 'assets/FantasticBaby.mp4', 'assets/ptdemo1.mp4'];
 var aa = 0;
 
-function eye () {
-	document.querySelector("#coaster").src = arr[0];	
+function vid (a) {
+	document.querySelector("#coaster").src = arr[a];	
 	document.querySelector("#currentvid").load();
 	play1();
 	toggle();
-	aa = 0;
-}
-
-function rain () {
-	document.querySelector("#coaster").src = arr[1];
-	document.querySelector("#currentvid").load();
-	play1();
-	toggle();
-	aa = 1;
-}
-
-function fantastic () {
-	document.querySelector("#coaster").src = arr[2];
-	document.querySelector("#currentvid").load();
-	play1();
-	toggle();
-	aa = 2;
-}
-
-function sober () {
-	document.querySelector("#coaster").src = arr[3];
-	document.querySelector("#currentvid").load();
-	play1();
-	toggle();
-	aa = 3;
+	aa = a;
 }
 
 function toggle() {
 	document.getElementById('test').setAttribute('visible', !document.getElementById('test').getAttribute('visible'));
 	document.getElementById('test1').setAttribute('visible', !document.getElementById('test1').getAttribute('visible'));
 	document.getElementById('baby').setAttribute('visible', !document.getElementById('baby').getAttribute('visible'));
-	document.getElementById('sober').setAttribute('visible', !document.getElementById('sober').getAttribute('visible'));
+	document.getElementById('pt').setAttribute('visible', !document.getElementById('pt').getAttribute('visible'));
 }
 
 function play1() {
@@ -54,14 +30,12 @@ function pause1() {
 
 function sound() {
 	document.getElementById('coaster').muted = true;
-	document.getElementById('coaster').volume=0;
 	document.getElementById('mute').setAttribute('visible', true);
 	document.getElementById('sound').setAttribute('visible', false);
 }
 
 function mute() {
 	document.getElementById('coaster').muted = false;
-	document.getElementById('coaster').volume = 1;
 	document.getElementById('mute').setAttribute('visible', false);
 	document.getElementById('sound').setAttribute('visible', true);
 }
