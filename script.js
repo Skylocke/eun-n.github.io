@@ -7,10 +7,6 @@ function vid (a) {
 	play1();
 	toggle();
 	aa = a;
-	document.getElementById('coaster').addEventListener('ended',nextvid,false);
-    function nextvid() {
-        forward();
-    }
 }
 
 function toggle() {
