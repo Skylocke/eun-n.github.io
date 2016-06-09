@@ -1,5 +1,22 @@
 var arr = ['assets/taeyeon1.mp4', 'assets/taeyeon.mp4', 'assets/FantasticBaby.mp4', 'assets/ptdemo1.mp4', 'assets/ptdemo2.mp4', 'assets/ptdemo3.mp4'];
+var varr = ['assets/shark.mp4'];
 var aa = 3;
+
+
+function vrvid (b) {
+	pause1();
+	document.querySelector('vrvid').src = varr[b];
+	document.querySelector('vrvid').setAttribute('visible', true);
+	document.querySelector('currentvid').setAttribute('visible', false);
+	document.querySelector('vrvid').load();
+}
+
+function exitvr() {
+	document.querySelector('vrvid').src = '';
+	document.querySelector('vrvid').setAttribute('visible', false);
+	document.querySelector('currentvid').setAttribute('visible', true);
+	document.querySelector('currentvid').load();
+}
 
 function vid (a) {
 	document.querySelector("#coaster").src = arr[a];	
