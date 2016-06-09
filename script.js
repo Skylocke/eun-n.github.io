@@ -70,3 +70,16 @@ function start () {
 	vid(3);
 	pause1();
 }
+
+function loop() {
+	document.getElementById('coaster').setAttribute('loop', true);
+	document.getElementById('loop').setAttribute('visible', false);
+	document.getElementById('noloop').setAttribute('visible', true);
+}
+
+function noloop() {
+	document.getElementById('coaster').setAttribute('loop', false);
+	document.getElementById('loop').setAttribute('visible', true);
+	document.getElementById('noloop').setAttribute('visible', false);
+
+}

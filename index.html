@@ -34,6 +34,8 @@
       <img id="ui10" src="assets/forward.png">
       <img id="ui11" src="assets/baby.jpg">
       <img id="ui12" src="assets/pt.jpg">
+      <img id="ui13" src="assets/loop.png">
+      <img id="ui14" src="assets/noloop.png">
 
       <!-- video tag, able to manipulate video src, but not a-video src -->
       <video id="coaster" autoplay loop="false"  controls onended="forward()">
@@ -81,6 +83,10 @@
     <!-- image icon for rewind and forward  -->
     <a-image id="rewind" onclick="rewind()" src="#ui9" rotation="0 0 0" height=".5" width=".5" position="-.7 -1 0" visible="true"></a-image>
     <a-image id="forward" onclick="forward()" src="#ui10" rotation="0 0 0" height=".5" width=".5" position=".7 -1 0" visible="true"></a-image>
+
+    <!-- image icon for loop -->
+    <a-image id="loop" onclick="loop()" src="#ui13" rotation="0 0 0" height=".5" width=".5" position="-1.4 -1 0" visible="true"></a-image>
+    <a-image id="noloop" onclick="noloop()" src="#ui14" rotation="0 0 0" height=".5" width=".5" position="-1.4 -1 0" visible="false"></a-image>
 
    <a-sky color="black"></a-sky>
 
