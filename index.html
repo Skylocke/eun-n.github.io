@@ -56,7 +56,7 @@
   </a-entity>
 
   <!-- Using the asset management system to display video -->
-  <a-video id="currentvid" src="#coaster" width="48" height="27" position="0 0 -25" webkit-playsinline></a-video>     
+  <a-video id="currentvid" src="#coaster" width="48" height="27" position="0 -0.5 -25" webkit-playsinline></a-video>     
           
     <!-- image when 'clicked' on will change the source video -->
     <a-image id="test" onclick="vid(0)" src="#ui2" rotation="0 0 0" height="1" width="1" position="4 2.4 0" visible="false"></a-image>
@@ -68,18 +68,18 @@
    <a-image id="menu" onclick="toggle()" src="#ui4" rotation="0 0 0" height=".5" width=".5" position="4 3.2 0"></a-image>
 
    <!-- image icons for pause and play buttons -->
-   <a-image id="play" onclick="play1()" src="#ui5" rotation="0 0 0" height=".5" width=".5" position="0 -.5 0" visible="false"></a-image>
-   <a-image id="pause" onclick="pause1()" src="#ui6" rotation="0 0 0" height=".5" width=".5" position="0 -.5 0" visible="true">
+   <a-image id="play" onclick="play1()" src="#ui5" rotation="0 0 0" height=".5" width=".5" position="0 -1 0" visible="false"></a-image>
+   <a-image id="pause" onclick="pause1()" src="#ui6" rotation="0 0 0" height=".5" width=".5" position="0 -1 0" visible="true">
     </a-image>
 
     <!-- image icons for mute and unmute -->
-    <a-image id="sound" onclick="sound()" src="#ui7" rotation="0 0 0" height=".5" width=".5" position="1.4 -.5 0" visible="true"></a-image>
-   <a-image id="mute" onclick="mute()" src="#ui8" rotation="0 0 0" height=".5" width=".5" position="1.4 -.5 0" visible="false">
+    <a-image id="sound" onclick="sound()" src="#ui7" rotation="0 0 0" height=".5" width=".5" position="1.4 -1 0" visible="true"></a-image>
+   <a-image id="mute" onclick="mute()" src="#ui8" rotation="0 0 0" height=".5" width=".5" position="1.4 -1 0" visible="false">
     </a-image>
 
     <!-- image icon for rewind and forward  -->
-    <a-image id="rewind" onclick="rewind()" src="#ui9" rotation="0 0 0" height=".5" width=".5" position="-.7 -.5 0" visible="true"></a-image>
-    <a-image id="forward" onclick="forward()" src="#ui10" rotation="0 0 0" height=".5" width=".5" position=".7 -.5 0" visible="true"></a-image>
+    <a-image id="rewind" onclick="rewind()" src="#ui9" rotation="0 0 0" height=".5" width=".5" position="-.7 -1 0" visible="true"></a-image>
+    <a-image id="forward" onclick="forward()" src="#ui10" rotation="0 0 0" height=".5" width=".5" position=".7 -1 0" visible="true"></a-image>
 
    <a-sky color="black"></a-sky>
 
