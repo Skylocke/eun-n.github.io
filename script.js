@@ -74,13 +74,13 @@ function start () {
 
 function loop() {
 	document.getElementById('coaster').setAttribute('loop', true);
-	document.getElementById('loop').setAttribute('visible', false);
-	document.getElementById('noloop').setAttribute('visible', true);
+	document.getElementById('loop').setAttribute('visible', true);
+	document.getElementById('noloop').setAttribute('visible', false);
 }
 
 function noloop() {
 	document.getElementById('coaster').setAttribute('loop', false);
-	document.getElementById('loop').setAttribute('visible', true);
-	document.getElementById('noloop').setAttribute('visible', false);
+	document.getElementById('loop').setAttribute('visible', false);
+	document.getElementById('noloop').setAttribute('visible', true);
 
 }
