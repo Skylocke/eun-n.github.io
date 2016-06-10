@@ -6,4 +6,4 @@ VR Theater
 -collapsible menu to hide available videos
 -VR viewing experience that allows one to watch videos without breaking their immersion
 
-![Alt text](http://screenshot.png "Optional title")
+![Alt text](screenshot.png "Optional title")
