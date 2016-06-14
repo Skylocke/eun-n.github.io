@@ -84,3 +84,18 @@ function noloop() {
 	document.getElementById('noloop').setAttribute('visible', true);
 
 }
+
+function shrink() {
+	document.getElementById('currentvid').setAttribute('height', 13.5);
+	document.getElementById('currentvid').setAttribute('width', 24);
+	document.getElementById('expand').setAttribute('visible', true);
+	document.getElementById('shrink').setAttribute('visible', false);
+}
+
+function expand() {
+	document.getElementById('currentvid').setAttribute('height', 27);
+	document.getElementById('currentvid').setAttribute('width', 48);
+	document.getElementById('expand').setAttribute('visible', false);
+	document.getElementById('shrink').setAttribute('visible', true);
+
+}

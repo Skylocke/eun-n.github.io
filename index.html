@@ -36,6 +36,8 @@
       <img id="ui12" src="assets/pt.jpg">
       <img id="ui13" src="assets/loop.png">
       <img id="ui14" src="assets/noloop.png">
+      <img id="ui15" src="assets/shrink.png">
+      <img id="ui16" src="assets/expand.png">
 
       <!-- video tag, able to manipulate video src, but not a-video src -->
       <video id="coaster" autoplay loop="false"  controls onended="forward()">
@@ -87,6 +89,10 @@
     <!-- image icon for loop -->
     <a-image id="loop" onclick="noloop()" src="#ui13" rotation="0 0 0" height=".5" width=".5" position="-1.4 -1 0" visible="false"></a-image>
     <a-image id="noloop" onclick="loop()" src="#ui14" rotation="0 0 0" height=".5" width=".5" position="-1.4 -1 0" visible="true"></a-image>
+
+    <!-- image icon for video size -->
+    <a-image id="shrink" onclick="shrink()" src="#ui15" rotation="0 0 0" height=".5" width=".5" position="2.1 -1 0" visible="true"></a-image>
+    <a-image id="expand" onclick="expand()" src="#ui16" rotation="0 0 0" height=".5" width=".5" position="2.1 -1 0" visible="false"></a-image>
 
    <a-sky color="black"></a-sky>
 
