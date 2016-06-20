@@ -40,7 +40,7 @@
       <img id="ui16" src="assets/expand.png">
 
       <!-- video tag, able to manipulate video src, but not a-video src -->
-      <video id="coaster" autoplay loop="false"  controls onended="forward()">
+      <video id="sourcevid" autoplay loop="false"  controls onended="forward()">
         <source src="assets/exo.mp4" type="video/mp4">
       </video>
     </a-assets>
@@ -61,7 +61,7 @@
   </a-entity>
 
   <!-- Using the asset management system to display video -->
-  <a-video id="currentvid" src="#coaster" width="48" height="27" position="0 -0.5 -25" webkit-playsinline></a-video>     
+  <a-video id="currentvid" src="#sourcevid" width="48" height="27" position="0 -0.5 -25" webkit-playsinline></a-video>     
           
     <!-- image when 'clicked' on will change the source video -->
     <a-image id="test" onclick="vid(0)" src="#ui2" rotation="0 0 0" height="1" width="1" position="4 2.4 0" visible="false"></a-image>

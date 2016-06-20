@@ -3,8 +3,8 @@ var aa = 0;
 
 
 function vid (a) {
-	document.querySelector("#coaster").src = arr[a];	
-	document.querySelector("#currentvid").load();
+	document.getElementById("sourcevid").src = arr[a];	
+	document.getElementById("currentvid").load();
 	play1();
 	toggle();
 	aa = a;
@@ -18,38 +18,38 @@ function toggle() {
 }
 
 function play1() {
-	document.getElementById('coaster').play();
+	document.getElementById('sourcevid').play();
 	document.getElementById('play').setAttribute('visible', false);
 	document.getElementById('pause').setAttribute('visible', true);
 }
 
 function pause1() {
-	document.getElementById('coaster').pause();
+	document.getElementById('sourcevid').pause();
 	document.getElementById('play').setAttribute('visible', true);
 	document.getElementById('pause').setAttribute('visible', false);
 }
 
 function sound() {
-	document.getElementById('coaster').muted = true;
+	document.getElementById('sourcevid').muted = true;
 	document.getElementById('mute').setAttribute('visible', true);
 	document.getElementById('sound').setAttribute('visible', false);
 }
 
 function mute() {
-	document.getElementById('coaster').muted = false;
+	document.getElementById('sourcevid').muted = false;
 	document.getElementById('mute').setAttribute('visible', false);
 	document.getElementById('sound').setAttribute('visible', true);
 }
 
 function rewind() {
-	document.getElementById('coaster').currentTime = 0;
+	document.getElementById('sourcevid').currentTime = 0;
 
-	if(document.getElementById('coaster').currentTime < 4) {
+	if(document.getElementById('sourcevid').currentTime < 4) {
 		if(aa-1 > -1) {
-		document.getElementById("coaster").src = arr[aa-1];
+		document.getElementById("sourcevid").src = arr[aa-1];
 		aa -= 1;
 		} else {
-		document.getElementById('coaster').src= arr[arr.length-1]; 
+		document.getElementById('sourcevid').src= arr[arr.length-1]; 
 		aa = arr.length-1;
 		}
 	}
@@ -57,10 +57,10 @@ function rewind() {
 
 function forward() {
 	if(aa+1 < arr.length) {
-		document.getElementById("coaster").src = arr[aa+1];
+		document.getElementById("sourcevid").src = arr[aa+1];
 		aa += 1;
 		} else {
-		document.getElementById('coaster').src= arr[0]; 
+		document.getElementById('sourcevid').src= arr[0]; 
 		aa = 0;
 		}
 
@@ -73,13 +73,13 @@ function start () {
 }
 
 function loop() {
-	document.getElementById('coaster').setAttribute('loop', true);
+	document.getElementById('sourcevid').setAttribute('loop', true);
 	document.getElementById('loop').setAttribute('visible', true);
 	document.getElementById('noloop').setAttribute('visible', false);
 }
 
 function noloop() {
-	document.getElementById('coaster').setAttribute('loop', false);
+	document.getElementById('sourcevid').setAttribute('loop', false);
 	document.getElementById('loop').setAttribute('visible', false);
 	document.getElementById('noloop').setAttribute('visible', true);
 
